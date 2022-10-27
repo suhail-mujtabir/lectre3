@@ -1,0 +1,16 @@
+{%extends 'index/layout.html'%}
+{% load static %}
+
+{%block title%}
+    Is it Newyear?
+{%endblock%}
+{%block head%}
+    <link rel="stylesheet" href="{% static 'newyear/style.css' %}">
+{%endblock%}
+{%block body%}
+    {% if newyear %}
+        <h1>Yes</h1>
+    {% else %}
+        <h1>No</h1>
+    {%endif%}
+{%endblock%}

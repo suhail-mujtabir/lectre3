@@ -1,0 +1,11 @@
+{%extends 'index/layout.html'%}
+{%block title%}
+Greetings
+{%endblock%}
+{%block body%}
+    <form action="{% url 'hello:index' %}" method="post">
+        {%csrf_token%}
+        {{form}}
+        <input type="submit">
+    </form>
+{%endblock%}

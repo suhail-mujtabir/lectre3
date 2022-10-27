@@ -1,0 +1,16 @@
+h1{
+    font-family: sans-serif;
+    font-size: 30px;
+    color: green;
+}
+
+ul li{
+    list-style: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+}

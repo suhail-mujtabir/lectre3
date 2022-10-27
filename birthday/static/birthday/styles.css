@@ -1,0 +1,9 @@
+h1{
+    font-family: sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+#birthday{
+    inherits: h1;
+    color: red;
+}

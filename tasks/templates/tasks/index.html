@@ -1,0 +1,20 @@
+{%extends "index/layout.html"%}
+{%load static%}
+{%block title%}
+Tasks
+{%endblock%}
+{%block heaad%}
+<link rel="stylesheet" href="{% static 'tasks/styles.css' %}">
+{%endblock%}
+{%block body%}
+<h1>Tasks</h1>
+    <ul>
+    {%for t in  tasks%}
+    <li>{{t}}</li>
+    {%empty%}
+    <li>No tasks</li>
+    {%endfor%}
+    </ul>
+    <a href="{%url 'tasks:add'%}">Add a new task</a>
+    <footer><a href="{%url 'birthday:index'%}">Is it my birthday?</a></footer>
+{%endblock%}

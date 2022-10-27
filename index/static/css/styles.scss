@@ -1,0 +1,17 @@
+$colorgreen:green;
+$colorspringgreen:springgreen;
+$colorred:red;
+
+
+.nav-item>.nav-link{
+    color:black !important;
+    &:hover{
+        color: $colorspringgreen !important;
+    }
+}
+
+.notfound {
+    color:$colorred; 
+    text-align: center;
+    font-size: 30px;
+}

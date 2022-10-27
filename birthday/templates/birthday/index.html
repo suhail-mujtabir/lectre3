@@ -1,0 +1,21 @@
+{%extends 'index/layout.html'%}
+{% load static %}
+
+{%block title%}
+    {% if birthday %}
+        It's your birthday ^_^
+    {% else %}
+    It's not your birthday yet!
+    {%endif%}
+{%endblock%}
+
+    {%block head%}
+    <link rel="stylesheet" href="{% static 'birthday/styles.css' %}">
+    {%endblock%}
+{%block body%}
+    {% if birthday %}
+    <h1 id="birthday">Happy birthday Fuad ^_^!!</h1>
+    {% else %}
+    <h1>It's not your birthday yet!</h1>
+    {%endif%}
+{%endblock%}

@@ -1,0 +1,12 @@
+.nav-item > .nav-link {
+  color: black !important;
+}
+.nav-item > .nav-link:hover {
+  color: springgreen !important;
+}
+
+.notfound {
+  color: red;
+  text-align: center;
+  font-size: 30px;
+}/*# sourceMappingURL=styles.css.map */

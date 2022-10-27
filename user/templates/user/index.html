@@ -1,0 +1,17 @@
+{%extends 'index/layout.html'%}
+{%block title%}
+Login
+{%endblock%}
+
+{%block body%}
+{%if msg%}
+<div>{{msg}}</div>
+{%else%}
+<h1>New Login</h1>
+{%endif%}
+<form method="post">
+    {%csrf_token%}
+    {{form.as_p}}
+    <input type="submit" value="Login">
+</form>
+{%endblock%}
